@@ -471,11 +471,15 @@ def main():
     # Grid Search for Hyperparameter Selection
     print("\n--- Stage 3: Hyperparameter Selection via Validation Set ---")
 
-    hyperparams_grid = [
-        (2.0, 0.5),
-        (3.0, 0.6),
-        (4.0, 0.7),
-        (5.0, 0.5)
+   hyperparams_grid = [
+        (3.0, 0.0),  
+        (3.0, 1.0),  
+        (1.0, 0.6),  
+        (3.0, 0.6),  
+        (5.0, 0.6),  
+        (10.0, 0.6), 
+        (3.0, 0.2),  
+        (3.0, 0.8)  
     ]
 
     tuning_results = []
