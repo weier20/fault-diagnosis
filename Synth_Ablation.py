@@ -221,7 +221,7 @@ def plot_ablation_radar(results, save_path):
 
 # 主干
 def main():
-    X, y = generate_synthetic_data(num_samples=250, seq_len=1024)
+    X, y = generate_synthetic_data(num_samples=300, seq_len=1024)
     feats = extract_features(X)
     idx_tr, idx_te = train_test_split(np.arange(len(y)), test_size=0.3, random_state=42, stratify=y)
 
